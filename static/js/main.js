@@ -7,10 +7,10 @@ $(document).ready(function () {
             if(inputPass.attr('type') === 'password'){
                 inputPass.removeAttr('type');
                 inputPass.attr('type','text');
-                $('.user__pass-icon').html('<i id="i" class="fa fa-eye-slash">')
+                $('.user__pass-icon').html('<i id="i" class="fa fa-eye">')
             }else {
                 inputPass.attr('type','password');
-                $('.user__pass-icon').html('<i id="i" class="fa fa-eye">')
+                $('.user__pass-icon').html('<i id="i" class="fa fa-eye-slash">')
             }
         });
     };
