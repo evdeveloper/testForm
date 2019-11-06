@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <div class="container">
+        <div class="inner">
+          <form class="form" action="/" method="post">
+            <div class="user__logo">
+              <svg class="svg-sprite-icon  icon-user-logo form__logo">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#user-logo"></use>
+              </svg>
+            </div>
+            <h1>Авторизация</h1>
+            <div class="user__item">
+              <input class="form__input" type="text" autocomplete="off" name="name" id="name" required>
+              <label class="form__label" for="name"><span class="form__label-text">Имя</span>
+                <svg class="svg-sprite-icon  icon-user-name user__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#user-name"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="user__item">
+              <input class="form__input" type="password" name="pass" id="pass" required>
+              <label class="form__label" for="pass"> <span class="form__label-text">Пароль</span>
+                <svg class="svg-sprite-icon  icon-lock user__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#lock"></use>
+                </svg>
+              </label>
+              <div class="user__pass-icon" title="Показать пароль"><i class="fa fa-eye" id="i"></i></div>
+            </div>
+            <div class="form__checkbox">
+              <input class="checkbox" type="checkbox" id="checkbox">
+              <label for="checkbox">запомнить меня</label>
+            </div>
+            <button class="form__submit" type="submit">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+      <div class="content">
+      </div>
+      <footer class="footer"></footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
